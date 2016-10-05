@@ -5,7 +5,7 @@ exports.isStar = false;
 exports.sum = function (a, b) {
     // Check valid data
     if (checkValidNum(a) && checkValidNum(b)) {
-        return a + b;
+        return Number(a) + Number(b);
     }
 };
 
