@@ -1,7 +1,9 @@
-'use strict';
+﻿'use strict';
 
 exports.isStar = true;
 
 exports.sum = function (a, b) {
-    // Реализуйте сложение в этой функции
+    if (!isNaN(parseInt(a)) && !isNaN(parseInt(b))) {
+        return a + b;
+    }
 };
