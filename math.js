@@ -22,13 +22,11 @@ function analyzeVariable(variable) {
 
 function parse(string) {
     var checkingResult = startCheckingTools(string);
-    if (checkingResult !== null)
-    {
+    if (checkingResult !== null) {
         return checkingResult;
     }
     var floatParsed = parseFloat(string);
-    if (isNaN(floatParsed))
-    {
+    if (isNaN(floatParsed)) {
         throw new TypeError();
     }
 
@@ -36,14 +34,12 @@ function parse(string) {
 }
 
 function startCheckingTools(string) {
-    var infinity = checkInfinity(string);   
-    if (infinity !== null)
-    {
+    var infinity = checkInfinity(string);
+    if (infinity !== null) {
         return infinity;
     }
     var scale = checkScaleOfNotation(string);
-    if (scale !== null)
-    {
+    if (scale !== null) {
         return scale;
     }
 
@@ -51,12 +47,10 @@ function startCheckingTools(string) {
 }
 
 function checkInfinity(string) {
-    if (string === 'Infinity')
-    {
+    if (string === 'Infinity') {
         return Infinity;
     }
-    if (string === '-Infinity')
-    {
+    if (string === '-Infinity') {
         return -Infinity;
     }
 
@@ -64,16 +58,13 @@ function checkInfinity(string) {
 }
 
 function checkScaleOfNotation(string) {
-    if (string.match(/^[\+-]?0x[A-Fa-f\d]{2}$/) !== null)
-    {
+    if (string.match(/^[\+-]?0x[A-Fa-f\d]{2}$/) !== null) {
         return parseInt(string, 16);
     }
-    else if (string.match(/^[\+-]?0\d+$/) !== null)
-    {
+    else if (string.match(/^[\+-]?0\d+$/) !== null) {
         return parseInt(string, 8);
     }
-    else if (string.match(/^[\+-]?\d+(\.\d+([eE][\+-]?\d+)?)?$/) === null)
-    {
+    else if (string.match(/^[\+-]?\d+(\.\d+([eE][\+-]?\d+)?)?$/) === null) {
         throw new TypeError();
     }
 
