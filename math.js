@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-exports.isStar = false;
+exports.isStar = true;
 
 exports.sum = function (a, b, cOptional) {
     var c;
@@ -10,7 +10,5 @@ exports.sum = function (a, b, cOptional) {
         c = cOptional;
     }
 
-    if (!isNaN(parseInt(a)) && !isNaN(parseInt(b)) && !isNaN(parseInt(c))) {
-        return a + b + c;
-    }
+    return Number(a) + Number(b) + Number(c);
 };
