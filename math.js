@@ -60,11 +60,9 @@ function checkInfinity(string) {
 function checkScaleOfNotation(string) {
     if (string.match(/^[\+-]?0x[A-Fa-f\d]{2}$/) !== null) {
         return parseInt(string, 16);
-    }
-    else if (string.match(/^[\+-]?0\d+$/) !== null) {
+    } else if (string.match(/^[\+-]?0\d+$/) !== null) {
         return parseInt(string, 8);
-    }
-    else if (string.match(/^[\+-]?\d+(\.\d+([eE][\+-]?\d+)?)?$/) === null) {
+    } else if (string.match(/^[\+-]?\d+(\.\d+([eE][\+-]?\d+)?)?$/) === null) {
         throw new TypeError();
     }
 
