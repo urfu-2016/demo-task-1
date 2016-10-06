@@ -10,3 +10,6 @@ console.info(sum(63, 15));
 
 console.info(sum('12', 7));
 // 19
+console.info(sum('qwer', 7));
+
+console.info(sum(2,3,4));
