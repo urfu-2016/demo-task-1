@@ -7,6 +7,6 @@ exports.sum = function (a, b, c) {
 
         return parseInt(a) + parseInt(b) + parseInt(c);
     }
-    
+
     return parseInt(a) + parseInt(b);
 };
