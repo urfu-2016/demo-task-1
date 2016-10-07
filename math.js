@@ -17,6 +17,5 @@ exports.sum = function (a, b, c) {
     if (isNaN(c)) {
         return -1;
     }
-    
     return 0 + a + b + c;
 };
