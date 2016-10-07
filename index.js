@@ -10,5 +10,3 @@ console.info(sum(63, 15));
 
 console.info(sum('12', 7));
 // 19
-
-console.info(sum());
