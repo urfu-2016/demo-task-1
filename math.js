@@ -2,6 +2,10 @@
 
 exports.isStar = true;
 
-exports.sum = function (a, b) {
+exports.sum = function (a, b, c){
+    if(arguments.length==2)
+        return (parseInt(a)) + b;
+    else
+        return (parseInt(a)) + b + c;
     // Реализуйте сложение в этой функции
 };
