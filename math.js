@@ -2,6 +2,6 @@
 
 exports.isStar = true;
 
-exports.sum = function (var a, var b) {
+exports.sum = function (a, b) {
     return a + b;
 };
