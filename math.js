@@ -8,13 +8,15 @@ exports.sum = function (a, b, c) {
     if (isNaN(a) || isNaN(b)) {
         return -1;
     }
-    if (c == undefined) {
+
+    if (c === undefined) {
         return a + b;
-    } else {
-        c = parseInt(c);
-        if (isNaN(c)) {
-            return -1;
-        }
-        return 0 + a + b + c;
     }
+
+    c = parseInt(c);
+    if (isNaN(c)) {
+        return -1;
+    }
+    
+    return 0 + a + b + c;
 };
