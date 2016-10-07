@@ -3,8 +3,8 @@
 exports.isStar = true;
 
 exports.sum = function (a, b, c) {
-    a = parseInt(a);
-    b = parseInt(b);
+    a = parseFloat(a);
+    b = parseFloat(b);
     if (isNaN(a) || isNaN(b)) {
         return -1;
     }
@@ -13,7 +13,7 @@ exports.sum = function (a, b, c) {
         return a + b;
     }
 
-    c = parseInt(c);
+    c = parseFloat(c);
     if (isNaN(c)) {
         return -1;
     }
