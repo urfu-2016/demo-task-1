@@ -2,10 +2,10 @@
 
 exports.isStar = true;
 
-function tryParseInt(c) {
+function tryParseFloat(c) {
     var number = 0;
     if (c !== undefined) {
-        number = parseInt(c);
+        number = parseFloat(c);
         number = !isNaN(number) ? number : 0;
     }
 
@@ -13,5 +13,5 @@ function tryParseInt(c) {
 }
 
 exports.sum = function (a, b, c) {
-    return tryParseInt(a) + tryParseInt(b) + tryParseInt(c);
+    return tryParseFloat(a) + tryParseFloat(b) + tryParseFloat(c);
 };
