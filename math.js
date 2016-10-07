@@ -8,6 +8,7 @@ function tryParseInt(c) {
         number = parseInt(c);
         number = !isNaN(number) ? number : 0;
     }
+
     return number;
 }
 
