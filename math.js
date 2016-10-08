@@ -4,5 +4,5 @@ exports.isStar = true;
 
 exports.sum = function (a, b) {
     // Реализуйте сложение в этой функции
-    return a+b;
+    if (isNaN(a) && isNaN(b)) return NaN; else return a+b;
 };
