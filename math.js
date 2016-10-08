@@ -12,5 +12,6 @@ exports.sum = function () {
             return NaN;
         }
     }
+
     return sum;
 };
