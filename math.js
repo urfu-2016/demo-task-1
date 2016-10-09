@@ -4,9 +4,7 @@ exports.isStar = true;
 
 exports.sum = function (a, b, c) {
     // Реализуйте сложение в этой функции
-    if (c===undefined) {
+    if (c === undefined) {
         return parseInt(a) + parseInt(b) + parseInt('0');
-    } else {
-        return parseInt(a) + parseInt(b) + parseInt(c);
     }
 };
