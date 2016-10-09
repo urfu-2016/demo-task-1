@@ -3,7 +3,8 @@
 exports.isStar = true;
 
 exports.sum = function (a, b) {
-    if (isNaN(a) && isNaN(b))
+    if (isNaN(a) && isNaN(b)) {
         return NaN;
-    else return a+b;
+    }
+    else return a + b;
 };
