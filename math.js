@@ -1,9 +1,10 @@
 'use strict';
 
 exports.isStar = true;
-var c;
+
+var c = 0;
+
 exports.sum = function (a, b) {
-    c = a + b;
-    
-	return c;
+    c = a + b;    
+    return c;
 };
