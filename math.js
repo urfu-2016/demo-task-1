@@ -4,10 +4,17 @@ exports.isStar = true;
 
 exports.sum = function (a, b, c) {
     var sum = 0;
-    for (var i = 0; i < 3 && i < arguments.length; i++) {
-        if (arguments[i] != undefined) {
-            sum += parseInt(arguments[i]);
-        }
+    if (a !== undefined) {
+        sum += parseInt(a);
     }
+
+    if (a !== undefined) {
+        sum += parseInt(b);
+    }
+
+    if (a !== undefined) {
+        sum += parseInt(c);
+    }
+
     return sum;
 };
