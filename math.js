@@ -4,7 +4,7 @@ exports.isStar = true;
 
 exports.sum = function (a, b) {
     if (isNaN(a) || isNaN(b)) {
-        return NaN;
+        return Error;
     }
 
     return a + b;
