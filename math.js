@@ -3,7 +3,6 @@
 exports.isStar = true;
 
 exports.sum = function (a, b) {
-    var a,b;
-    return a+b;
-    // Реализуйте сложение в этой функции
+    var c=a+b;
+    return c;
 };
