@@ -8,11 +8,11 @@ exports.sum = function (a, b, c) {
         sum += parseInt(a);
     }
 
-    if (a !== undefined) {
+    if (b !== undefined) {
         sum += parseInt(b);
     }
 
-    if (a !== undefined) {
+    if (c !== undefined) {
         sum += parseInt(c);
     }
 
