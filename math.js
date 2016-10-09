@@ -4,13 +4,13 @@ exports.isStar = true;
 
 exports.sum = function (a, b, c) {
     // Реализуйте сложение в этой функции
-    if (c === "undefined") {
+    if (c === undefined) {
         return parseInt(a, 10) + parseInt(b, 10);
     }
-    if (b === "undefined") {
+    if (b === undefined) {
         return parseInt(a, 10) + parseInt(c, 10);
     }
-    if (a === "undefined") {
+    if (a === undefined) {
         return parseInt(c, 10) + parseInt(b, 10);
     }
 
