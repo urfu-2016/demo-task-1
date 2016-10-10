@@ -8,5 +8,5 @@ exports.sum = function (a, b, c) {
         return Number(a) + Number(b);
     }
 
-    return Number(a) + Number(b) + Number(c); 
+    return Number(a) + Number(b) + Number(c);
 };
