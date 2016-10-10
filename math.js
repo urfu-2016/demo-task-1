@@ -3,11 +3,7 @@
 exports.isStar = true;
 
 exports.sum = function (a, b) {
-    var c = Number(a) + Number(b);
-    if (Number.isNaN(c)) {
-
-        return NaN;
-    }
+    var c = parseInt(a) + parseInt(b);
 
     return c;
 };
