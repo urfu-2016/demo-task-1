@@ -1,7 +1,8 @@
 'use strict';
 
-exports.isStar = false;
+exports.isStar = true;
 
-exports.sum = function (a, b) {
-    return a + b;
+exports.sum = function (a, b, c) {
+
+    return parseInt(a, 10) + parseInt(b, 10);
 };
