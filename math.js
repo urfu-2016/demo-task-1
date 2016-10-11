@@ -2,7 +2,10 @@
 
 exports.isStar = true;
 
-exports.sum = function () {
+exports.sum = function (a, b, c) {
     // Реализуйте сложение в этой функции
-    return Array.prototype.reduce.call(arguments, (acc, item) => acc + item);
+    if (typeof(c) == "undefined"){
+        c = "";
+    }
+    return a + b + c;
 };
