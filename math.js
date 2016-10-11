@@ -2,7 +2,7 @@
 
 exports.isStar = true;
 
-exports.sum = function (a, b, c) {
+exports.sum = function (a, b) {
     // Реализуйте сложение в этой функции
-    return parseFloat(a) + parseFloat(b) + parseFloat(c);
+    return parseInt(a) + parseInt(b);
 };
