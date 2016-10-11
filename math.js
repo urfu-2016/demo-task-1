@@ -8,8 +8,9 @@ exports.sum = function (a, b) {
     if ((isNaN(Number(a)) === false) && (isNaN(Number(b)) === false)) {
         a = Number(a);
         b = Number(b);
-        
+
         return a + b;
     }
-    return "Введены неверные данные.";
+
+    return 'Введены неверные данные.';
 };
