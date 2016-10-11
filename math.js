@@ -7,7 +7,7 @@ exports.sum = function (a, b) {
     var res = (Number(a) || 0) + (Number(b) || 0);
 
     for (var index = 2; index < arguments.length; index++) {
-        res += parseInt(arguments[index]);
+        res += Number(arguments[index]) || 0;
     }
 
     return res;
