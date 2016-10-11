@@ -2,6 +2,16 @@
 
 exports.isStar = true;
 
-exports.sum = function (a, b) {
-    // Реализуйте сложение в этой функции
+exports.sum = function () {
+    var sum = 0;
+    for (var i = 0; i < arguments.length; i++) {
+        var a = parseInt(arguments[i]);
+        if (!isNaN(a)) {
+            sum += a;
+        } else {
+            return NaN;
+        }
+    }
+
+    return sum;
 };
