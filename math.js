@@ -8,4 +8,4 @@ exports.sum = function (first, second, third) {
     }
 
     return first + second + third;
-}
+};
