@@ -2,6 +2,6 @@
 
 exports.isStar = true;
 
-exports.sum = function (a, b) {
-    retutn a+b;
+exports.sum = function (a, b, c) {
+    retutn parseInt(a) + parseInt(b) + (c === undefined ? 0 : parseInt(c));
 };
