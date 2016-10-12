@@ -3,7 +3,7 @@
 exports.isStar = false;
 
 exports.sum = function (a, b) {
-    
-    alert(a+b);
+
+    a+b
 
 };
