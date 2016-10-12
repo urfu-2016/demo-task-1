@@ -1,7 +1,7 @@
 'use strict';
 
-exports.isStar = true;
+exports.isStar = false;
 
-exports.sum = function (a, b, c) {
-    retutn parseInt(a) + parseInt(b) + (c === undefined ? 0 : parseInt(c));
+exports.sum = function (a, b) {
+    return Numder(a) + Number(b);
 };
