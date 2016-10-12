@@ -9,7 +9,9 @@ exports.sum = function (a, b, c) {
     if (c !== undefined && isNaN(Number(c)) === false) {
         c = Number(c);
     }
-    else { c = 0; }
+    else {
+        c = 0;
+    }
 
 // приводим к типу number, если не NaN
     if ((isNaN(Number(a)) === false) && (isNaN(Number(b)) === false)) {
