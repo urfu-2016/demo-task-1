@@ -3,5 +3,5 @@
 exports.isStar = false;
 
 exports.sum = function (a, b) {
-    return Numder(a) + Number(b);
+    return Number(a) + Number(b);
 };
