@@ -2,9 +2,6 @@
 
 exports.isStar = true;
 
-exports.sum = function (a, b, c) {
-    if (c == undefined) {
-        c = 0;
-    }
-    return +a + b + c;
+exports.sum = function (a, b) {
+    return +a + b;
 };
