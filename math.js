@@ -1,8 +1,13 @@
 'use strict';
 
-exports.isStar = false;
+exports.isStar = true;
 
-exports.sum = function (a, b) {
+exports.sum = function (a, b, c) {
     // Реализуйте сложение в этой функции
-    return parseFloat(a) + parseFloat(b);
+    var sum = 0;
+    for (var i = 0; i < arguments.length; i++) {
+        sum += arguments[i];
+    }
+
+    return sum;
 };
