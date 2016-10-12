@@ -12,6 +12,5 @@ exports.sum = function (a, b) {
         return a + b;
     }
 
-    // return 'Введены неверные данные.';
     return;
 };
