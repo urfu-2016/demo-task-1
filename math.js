@@ -8,8 +8,7 @@ exports.sum = function (a, b, c) {
 // если он не существует или неподходящего типа, то присваиваем 0
     if (c !== undefined && isNaN(Number(c)) === false) {
         c = Number(c);
-    }
-    else {
+    } else {
         c = 0;
     }
 
