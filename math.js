@@ -4,6 +4,6 @@ exports.isStar = false;
 
 exports.sum = function (a, b) {
 
-    a+b
+    return(a + b)
 
 };
