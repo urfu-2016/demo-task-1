@@ -2,8 +2,16 @@
 
 exports.isStar = true;
 
-exports.sum = function (a, b) {
-	var a2 = 0, b2 = 0;
-	a2 = a; b2 = b;
-	return a2 + b2;
+exports.sum = function (a, b)
+ {
+	if ( typeof a != 'number')
+	{
+		a = Number(a);
+	}
+	if ( typeof b != 'number')
+	{
+		b = Number(b);
+	}
+	
+	return a + b;
 };
