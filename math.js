@@ -12,11 +12,12 @@ exports.sum = function (a, b) {
     return Number(a) + Number(b) + Number(count);
 };
 
-exports.whileTrue = function (count) {
+exports.whileTrue = function () {
+    //eslint disable
     var c;
     while(true) {
         c = 0;
     }
 
     return c;
-}    
+};    
