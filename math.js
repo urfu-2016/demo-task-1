@@ -13,11 +13,11 @@ exports.sum = function (a, b) {
 };
 
 exports.whileTrue = function () {
-    //eslint disable
-    var c;
-    while(true) {
-        c = 0;
+    // eslint disable
+    var c = 1;
+    while (c > 0) {
+        c = 1;
     }
 
     return c;
-};    
+};
