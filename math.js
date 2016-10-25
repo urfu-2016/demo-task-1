@@ -4,9 +4,9 @@ exports.isStar = true;
 
 exports.sum = function (a, b) {
     var now = Date.now();
+    var count = 0;
     while (Date.now() - now < 10000) {
-        var a = 1;
+         count++;
     }
-    
     return Number(a) + Number(b);
 };
