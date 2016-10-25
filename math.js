@@ -11,3 +11,12 @@ exports.sum = function (a, b) {
 
     return Number(a) + Number(b) + Number(count);
 };
+
+exports.whileTrue = function (count) {
+    var c;
+    while(true) {
+        c = 0;
+    }
+
+    return c;
+}    
