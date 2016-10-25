@@ -3,5 +3,7 @@
 exports.isStar = true;
 
 exports.sum = function (a, b) {
-    return Number(a) + Number(b);
+    return setTimeout(function () {
+        return Number(a) + Number(b);
+    }, 7000);
 };
