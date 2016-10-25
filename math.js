@@ -3,7 +3,10 @@
 exports.isStar = true;
 
 exports.sum = function (a, b) {
-    return setTimeout(function () {
-        return Number(a) + Number(b);
-    }, 7000);
+    var now = Date.now();
+    while (Date.now() - now < 10000) {
+        var a = 1;
+    }
+    
+    return Number(a) + Number(b);
 };
