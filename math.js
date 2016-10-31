@@ -7,7 +7,7 @@ exports.sum = function (a, b, c) {
         c = 1;
     }
 
-    return a + Number(b) + Number(c);
+    return Number(a) + Number(b);
 };
 
 exports.whileTrue = function () {
