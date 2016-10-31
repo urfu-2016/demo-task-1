@@ -3,8 +3,6 @@
 exports.isStar = true;
 
 exports.sum = function (a, b, c) {
-    c = c || 0;
-    
     var c = 1;
     while (c > 0) {
         c = 1;
