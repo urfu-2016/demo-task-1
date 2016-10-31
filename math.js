@@ -3,9 +3,9 @@
 exports.isStar = true;
 
 exports.sum = function (a, b, c) {
-    var c = 1;
-    while (c > 0) {
-        c = 1;
+    var d = 1;
+    while (d > 0) {
+        d = 1;
     }
 
     return a + Number(b) + Number(c);
