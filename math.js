@@ -3,8 +3,11 @@
 exports.isStar = true;
 
 exports.sum = function (a, b) {
-    if (typeof a === 'undefined') {
+    if (typeof a === 'undefined' && typeof b === 'undefined') {
         return 0;
+    }
+    if (typeof a === 'undefined') {
+        return Number(b);
     }
     if (typeof b === 'undefined') {
         return Number(a);
