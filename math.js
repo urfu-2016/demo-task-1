@@ -1,6 +1,6 @@
 'use strict';
 
-exports.isStar = true;
+exports.isStar = false;
 
 exports.sum = function (a, b) {
     if (typeof a === 'undefined' && typeof b === 'undefined') {
