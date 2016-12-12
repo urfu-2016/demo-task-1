@@ -2,6 +2,19 @@
 
 exports.isStar = true;
 
-exports.sum = function (a, b) {
-    // Реализуйте сложение в этой функции
+exports.sum = function (a, b, c) {
+    var sum = 0;
+    if (a !== undefined) {
+        sum += parseInt(a);
+    }
+
+    if (b !== undefined) {
+        sum += parseInt(b);
+    }
+
+    if (c !== undefined) {
+        sum += parseInt(c);
+    }
+
+    return sum;
 };
