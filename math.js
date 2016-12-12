@@ -2,6 +2,11 @@
 
 exports.isStar = true;
 
-exports.sum = function (a, b) {
-    // Реализуйте сложение в этой функции
+exports.sum = function (a, b, c) {
+    var sum = Number(a) + Number(b);
+    if (c) {
+        sum += Number(c);
+    }
+
+    return sum;
 };
