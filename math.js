@@ -3,5 +3,9 @@
 exports.isStar = true;
 
 exports.sum = function (a, b) {
-    // Реализуйте сложение в этой функции
+    return Number(a) + Number(b);
+};
+
+exports.sumOfThree = function (a, b, c) {
+    return Number(a) + Number(b) + Number(c);
 };
