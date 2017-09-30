@@ -1,6 +1,6 @@
 'use strict';
 
-exports.isStar = false;
+exports.isStar = true;
 function typeChecking(c, d) {
     var ans = 0;
     if ((typeof d) === 'string') {
@@ -20,6 +20,9 @@ exports.sum = function (a, b) {
         answer = typeChecking(a1, b);
     } else {
         answer = typeChecking(a, b);
+    }
+    if (arguments.length > 2) {
+        answer = typeChecking(answer, arguments[2]);
     }
 
     return answer;
