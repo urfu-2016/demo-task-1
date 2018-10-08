@@ -3,5 +3,8 @@
 exports.isStar = true;
 
 exports.sum = function (a, b) {
+    if (arguments.length == 3) {
+    return a + b + agruments[2];
+    }
     return a + b;
 };
